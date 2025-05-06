@@ -1,0 +1,398 @@
+/* Geral */
+
+body {
+  background-color: #FFE8B6;
+  font-family: Arial, sans-serif;
+}
+.fundo {
+  margin: 3% auto;
+  background-color: #5B913B;
+  width: 75%;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+
+/* Cadastro */
+
+/* Inputs */
+.campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.campos label {
+ margin:1% 0;
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+
+}
+.campos input {
+  margin-top: 1%;
+  width: 50%;
+  font-size: x-large;
+  border-radius: 33px;
+  border-style: none;
+  background-color: #77B254;
+  border: solid 2px black;
+}
+.campos input:hover ,.campos input:focus{
+  outline: none;
+  border: solid 2px black;
+  background-color: #FFE8B6;
+  font-size: xx-large;
+  width: 75%;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-cadastro {
+  background-color: greenyellow;
+  color: black;
+  border-style: none;
+}
+#btn-cadastro:hover{
+  background-color: #5eff003b;
+  transition: all 0.3s ease-in-out;
+  border: solid 2px rgba(0, 0, 0, 0.418);
+  color :greenyellow;
+  font-weight: bolder;
+}
+
+#btn-editar{
+  background-color: #FFE8B6;
+  border-style: none;
+  color: black;
+}
+#btn-editar:hover{
+  background-color: #5eff003b;
+  transition: all 0.3s ease-in-out;
+  border: solid 2px rgba(0, 0, 0, 0.418);
+  color :#FFE8B6;
+  font-weight: bolder;
+}
+
+#mensagemCadastro{
+  font-size: xx-large;
+  padding: 1%;
+}
+
+
+
+
+/* Edição */
+
+/* Botão */
+.botao {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.botao button{
+  width: 13em;
+  font-size: x-large;
+  border-radius: 33px;
+}
+.btn-Editar{
+  background-color: rgb(133, 201, 33);
+  border-style: none;
+  color: black;
+}
+.btn-Editar:hover{
+  background-color: darkgreen;
+  color: white;
+  font-weight: bolder;
+  border: solid 2px rgb(153, 255, 0);
+  transition: all 0.3s ease-in-out;
+  
+}
+.btn-Excluir{
+  background-color: red;
+  border-style: none;
+}
+.btn-Excluir:hover{
+  background-color: darkred;
+  color: white;
+  font-weight: bolder;
+  border: solid 2px red;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+/* Listagem */
+
+.container {
+  text-align: center;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: flex-start;
+}
+
+#listagem-produtor {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.produtor-item {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 4%;
+  background-color: #5B913B;
+  padding: 1%;
+  padding-bottom: 10px;
+  border-radius: 22px;
+  line-height: 42px;
+}
+.produtor-item:hover{
+  transition: all 0.3s ease-in-out;
+  font-size: x-large;
+  border: solid 5px #77B254;
+  color: black;
+  border-radius: 0;
+}
+.produtor-item strong{
+  font-weight: bold;
+}
+/* Editores */
+#formulario-edicao{
+  width: 40%;
+  margin-bottom: 8px;
+  background-color: #5B913B;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+}
+#formulario-edicao h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 2% 0;
+}
+
+#formulario-edicao h4{
+  font-size: x-large;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+#formulario-edicao input{
+  font-size: large;
+  margin-top: 2%;
+  width: 50%;
+  border-radius: 33px;
+  background-color: #77B254;
+  border-style: none;
+}
+
+#formulario-edicao input:focus ,#formulario-edicao input:hover{ 
+  outline: none;
+  border: solid 2px black;
+  background-color: #FFE8B6;
+  font-size: x-large;
+  width: 75%;
+  transition: all 0.3s ease-in-out;
+}
+
+#formulario-edicao button{
+  border-style: none;
+  width: 40%;
+  margin: 2%;
+  font-size: x-large;
+  border-radius: 33px;
+  display: inline-block;
+}
+#btn-salvar-edicao{
+ background-color: green;
+ border: solid 2px greenyellow;
+ color: white;
+}
+
+#btn-salvar-edicao:hover{
+  background-color: #5B913B;
+  transition: all 0.1s ease-in-out;
+  border: solid 2px greenyellow;
+  color :greenyellow;
+  font-weight: bolder;
+}
+
+#btn-cancelar-edicao{
+  background-color: rgb(212, 1, 1);
+}
+#btn-cancelar-edicao:hover{
+  font-weight: bolder;
+  background-color: #5B913B;
+  transition: all 0.1s ease-in-out;
+  border: solid 2px red;
+  color :red
+}
+
+/* Login */
+
+#container {
+  text-align: center;
+  font-size: x-large;
+  margin: 2% auto;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5B913B;
+  border-radius: 22px;
+  line-height: 42px;
+  width: 50%;
+}
+
+#container label {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 2% 0;
+}
+#container input {
+  font-size: x-large;
+  margin-top: 2%;
+  width: 50%;
+  border-radius: 33px;
+  background-color: #77B254;
+  border: solid 2px black;
+  
+}
+#container input:focus ,#container input:hover{ 
+  outline: none;
+  border: solid 2px black;
+  background-color: #FFE8B6;
+  font-size: x-large;
+  width: 75%;
+  transition: all 0.3s ease-in-out;
+}
+
+#container p{
+  color: black;
+  font-weight: bold;
+}
+#container a{
+  background-color: #77B254;
+  padding: 2%;
+  border-radius: 22px;
+  border: black solid 2px;
+  color: black;
+  font-weight: bold;
+  text-decoration: solid;
+  font-size: x-large;
+}
+#container a:hover{
+  background-color: #77B254;
+  transition: all 0.5s ease-in-out;
+  border: solid 2px #D99D81;
+  color :#FFE8B6;
+  font-weight: bolder;
+  width: 25% ;
+}
+
+#container button{
+  background-color: #5B913B;
+  width: 20%;
+  border-radius: 22px;
+  border: black solid 2px;
+  color: black;
+  font-weight: bold;
+  text-decoration: solid;
+  font-size: x-large;
+}
+#container button:hover{
+  background-color: #77B254;
+  transition: all 0.5s ease-in-out;
+  border: solid 2px greenyellow;
+  color :greenyellow;
+  font-weight: bolder;
+  width:  25% ;
+}
+
+/* Menus */
+
+.fundo-menus{
+  margin: 3% auto;
+  background-color: #5B913B;
+  max-width: 75%;
+  padding: 2%;
+  border-radius: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Produtos */
+
+/* botão */
+#btn-salvar{
+  background-color: green;
+  border: solid 2px greenyellow;
+  color: white;
+ }
+ 
+ #btn-salvar:hover{
+   background-color: #5B913B;
+   transition: all 0.1s ease-in-out;
+   border: solid 2px greenyellow;
+   color :greenyellow;
+   font-weight: bolder;
+ }
+
+ #btn-produtos{
+  background-color: #FFE8B6;
+  border-style: none;
+  color: black;
+}
+#btn-produtos:hover{
+  background-color: #5eff003b;
+  transition: all 0.3s ease-in-out;
+  border: solid 2px rgba(0, 0, 0, 0.418);
+  color :#FFE8B6;
+  font-weight: bolder;
+}
+
+/* Listagem de produtos */
+
+#listar-produtos{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.produto-item {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 4%;
+  background-color: #5B913B;
+  padding: 4%;
+  padding-bottom: 10px;
+  border-radius: 22px;
+  line-height: 42px;
+}
+.produto-item:hover{
+  transition: all 0.3s ease-in-out;
+  font-size: x-large;
+  border: solid 5px #77B254;
+  color: black;
+  border-radius: 0;
+}
+.produto-item strong{
+  font-weight: bold;
+}
